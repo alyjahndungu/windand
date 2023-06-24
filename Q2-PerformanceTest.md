@@ -1,5 +1,3 @@
-# windand
-
 const fs = require('fs');
 
 function readBooksFromFile(filePath) {

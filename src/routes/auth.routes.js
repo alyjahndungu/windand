@@ -6,7 +6,6 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const router = express.Router();
 
-const authorize = require("../middleware/auth");
 const { check, validationResult } = require("express-validator");
 
 // Register new User endpoint

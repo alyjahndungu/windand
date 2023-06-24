@@ -10,4 +10,4 @@ export const updateBook = (_id, values) =>
     new: true,
   });
 
-export const deleteBookById = (_id) => BooksModel.findByIdAndDelete({ _id });
+export const deleteBook = (_id) => BooksModel.findByIdAndDelete({ _id });
