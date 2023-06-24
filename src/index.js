@@ -5,7 +5,6 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import cors from "cors";
 import mongoose from "mongoose";
-require("dotenv").config();
 
 const app = express();
 
@@ -24,11 +23,12 @@ app.use("/api", api);
 
 const server = http.createServer(app);
 
-const port = process.env.PORT || 8088;
-const MONGO_URL = process.env.MONGO_URL;
+const port = 8000;
+const MONGO_URL =
+  "mongodb+srv://develijahndungu:monkey12@cluster0.izq45my.mongodb.net/?retryWrites=true&w=majority";
 
 server.listen(port, () => {
-  console.log("Server running on 8088");
+  console.log("Server running on 8000");
 });
 
 mongoose.Promise = Promise;
